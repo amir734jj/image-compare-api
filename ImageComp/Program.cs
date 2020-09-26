@@ -20,8 +20,8 @@ namespace ConsoleComparison
         {
             var prefix = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
             
-            var p1 = Path.Join(prefix, "Screenshot from 2020-02-16 11-35-07.png");
-            var p2 = Path.Join(prefix, "rr-parse-table.png");
+            var p1 = Path.Join(prefix, "img1.png");
+            var p2 = Path.Join(prefix, "img2.png");
 
             Console.WriteLine($"Diff: {Image.FromFile(p1).PercentageDifference(Image.FromFile(p2))}");
             Console.WriteLine($"Diff: {Image.FromFile(p1).BhattacharyyaDifference(Image.FromFile(p2))}");

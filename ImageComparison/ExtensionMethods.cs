@@ -25,8 +25,7 @@ namespace ImageComparison
 
             return 1.0 * diffPixels / (height * width);
         }
-        
-        
+
         /// <summary>
         /// The Bhattacharyya difference (the difference between normalized versions of the histograms of both images)
         /// This tells something about the differences in the brightness of the images as a whole, not so much about where they differ.
@@ -78,9 +77,7 @@ namespace ImageComparison
             var distance = Math.Sqrt(dist1);
             distance = Math.Round(distance, 8);
             return (float)distance;
-
         }
-
 
         public static (int height, int width) GetDimensions(Image img1, Image img2)
         {
